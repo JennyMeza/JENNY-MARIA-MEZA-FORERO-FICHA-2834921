@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación Interactiva del Zoológico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Los Fundamentos de la Fotografía en Zoológicos</h1>
+        <p>Haz clic en cada imagen para ver más información sobre eventos y noticias.</p>
+    </header>
+
+    <main>
+        <!-- Caja 1 -->
+        <div class="caja" onclick="openModal('modal1')">
+            <h2>1. Animales Cuidado y Bienestar</h2>
+            <img src="images/Animales-Cuidado-y-Bienestar.jpg" alt="Animales Cuidado y Bienestar">
+        </div>
+
+        <!-- Caja 2 -->
+        <div class="caja" onclick="openModal('modal2')">
+            <h2>2. Niño con Elefante</h2>
+            <img src="images/depositphotos_niño elefante_macoelefante.jpg" alt="Niño con Elefante">
+        </div>
+
+        <!-- Caja 3 -->
+        <div class="caja" onclick="openModal('modal3')">
+            <h2>3. Elefante Grande</h2>
+            <img src="images/Elefante_grande.jpg" alt="Elefante Grande">
+        </div>
+
+        <!-- Caja 4 -->
+        <div class="caja" onclick="openModal('modal4')">
+            <h2>4. Entrada del Zoológico</h2>
+            <img src="images/entrada_zool.jpg" alt="Entrada del Zoológico">
+        </div>
+
+        <!-- Caja 5 -->
+        <div class="caja" onclick="openModal('modal5')">
+            <h2>5. Familia en el Zoológico</h2>
+            <img src="images/familia_zoo.jpg" alt="Familia en el Zoológico">
+        </div>
+
+        <!-- Caja 6 -->
+        <div class="caja" onclick="openModal('modal6')">
+            <h2>6. Jirafas y Niños</h2>
+            <img src="images/jirafas_y_niños.jpg" alt="Jirafas y Niños">
+        </div>
+
+        <!-- Caja 7 -->
+        <div class="caja" onclick="openModal('modal7')">
+            <h2>7. Mapa del Zoológico</h2>
+            <img src="images/mapa_2zool.jpg" alt="Mapa del Zoológico">
+        </div>
+
+        <!-- Caja 8 -->
+        <div class="caja" onclick="openModal('modal8')">
+            <h2>8. Niños Viendo Jirafas</h2>
+            <img src="images/niños_viendo_jirafas.jpg" alt="Niños Viendo Jirafas">
+        </div>
+
+        <!-- Caja 9 -->
+        <div class="caja" onclick="openModal('modal9')">
+            <h2>9. Niños y Tigres</h2>
+            <img src="images/niños_y_tigres.jpg" alt="Niños y Tigres">
+        </div>
+
+        <!-- Caja 10 -->
+        <div class="caja" onclick="openModal('modal10')">
+            <h2>10. Tablero de Animales</h2>
+            <img src="images/tablero_animales_zoo.jpg" alt="Tablero de Animales">
+        </div>
+
+        <!-- Caja 11 -->
+        <div class="caja" onclick="openModal('modal11')">
+            <h2>11. Logo del Zoológico</h2>
+            <img src="images/logo.jpg" alt="Logo del Zoológico">
+        </div>
+    </main>
+
+    <!-- Modales (ventanas emergentes) -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Animales Cuidado y Bienestar</h2>
+            <p><strong>Evento Especial:</strong> Apertura del nuevo recinto de pandas.</p>
+            <p><strong>Últimas Noticias:</strong> Nuevas iniciativas de cuidado animal.</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Niño con Elefante</h2>
+            <p><strong>Evento Especial:</strong> Día del Fotógrafo con premios especiales.</p>
+            <p><strong>Últimas Noticias:</strong> Nació una nueva cría de jirafa.</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Elefante Grande</h2>
+            <p><strong>Evento Especial:</strong> Safari nocturno para familias.</p>
+            <p><strong>Últimas Noticias:</strong> Iniciativas para proteger elefantes.</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>Entrada del Zoológico</h2>
+            <p><strong>Evento Especial:</strong> Entrada gratuita para niños menores de 10 años.</p>
+            <p><strong>Últimas Noticias:</strong> Renovaciones completadas en la entrada.</p>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h2>Familia en el Zoológico</h2>
+            <p><strong>Evento Especial:</strong> Talleres interactivos para familias.</p>
+            <p><strong>Últimas Noticias:</strong> Se amplió el área de juegos infantiles.</p>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <h2>Jirafas y Niños</h2>
+            <p><strong>Evento Especial:</strong> Descubre la elegancia de las jirafas.</p>
+            <p><strong>Últimas Noticias:</strong> Nueva cría de jirafa ha nacido en el zoológico.</p>
+        </div>
+    </div>
+
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal7')">&times;</span>
+            <h2>Mapa del Zoológico</h2>
+            <p><strong>Evento Especial:</strong> Nuevos recorridos interactivos disponibles.</p>
+            <p><strong>Últimas Noticias:</strong> Se actualizó el mapa del parque.</p>
+        </div>
+    </div>
+
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal8')">&times;</span>
+            <h2>Niños Viendo Jirafas</h2>
+            <p><strong>Evento Especial:</strong> Vive la experiencia educativa con nuestros cuidadores.</p>
+            <p><strong>Últimas Noticias:</strong> Actividades educativas todos los sábados.</p>
+        </div>
+    </div>
+
+    <div id="modal9" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal9')">&times;</span>
+            <h2>Niños y Tigres</h2>
+            <p><strong>Evento Especial:</strong> Exhibición de tigres de Bengala.</p>
+            <p><strong>Últimas Noticias:</strong> Conoce nuestras iniciativas de conservación.</p>
+        </div>
+    </div>
+
+    <div id="modal10" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal10')">&times;</span>
+            <h2>Tablero de Animales</h2>
+            <p><strong>Evento Especial:</strong> Taller educativo sobre especies en peligro.</p>
+            <p><strong>Últimas Noticias:</strong> Aprende sobre el cuidado de animales exóticos.</p>
+        </div>
+    </div>
+
+    <div id="modal11" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal11')">&times;</span>
+            <h2>Logo del Zoológico</h2>
+            <p><strong>Evento Especial:</strong> Descuentos para grupos escolares.</p>
+            <p><strong>Últimas Noticias:</strong> El zoológico celebra 50 años de historia.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Zoológico São Paulo - Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript para el funcionamiento de los modales -->
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+    </script>
+</body>
+</html>
